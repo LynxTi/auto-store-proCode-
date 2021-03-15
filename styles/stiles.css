@@ -1,0 +1,133 @@
+.wrapper {
+    max-width: 1110px;
+    margin: auto;
+    font-family: 'Raleway Regular', arial;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+button {
+    border: none;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.header__link {
+    font-weight: bold;
+    margin-bottom: 35px;
+    padding-top: 13px;
+
+}
+
+.header__link-block {
+}
+
+.header__authorization-block {
+    display: flex;
+}
+
+.header__authorization-btn {
+    width: 132px;
+    height: 44px;
+    background: #FFE8BD;
+    padding-right: 0;
+}
+
+.header__loginIn-btn {
+    display: flex;
+    background-color: inherit;
+    gap: 9px;
+    padding: 0px 14px 0 17px;
+    align-items: center;
+    height: 44px;
+}
+
+
+.header__logo-bascet-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-block {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.header__bascet-block {
+    display: flex;
+    gap: 12px;
+    padding-top: 1px;
+    width: 115px;
+    height: 38px;
+    border: 1px solid #FFAF1E;
+    border-radius: 3px;
+    background-color: inherit;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    height: 50px;
+    background: #FFAF1E;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+    margin-bottom: 38px;
+}
+
+.menu__item__block {
+    padding:16px 28px;
+}
+
+.search-block {
+height: 110px;
+background: #FFFFFF;
+border: 1px solid #E4E4E4;
+box-sizing: border-box;
+box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.05);
+border-radius: 3px;
+padding: 17px 16px;
+}
+
+.search-block__search-filter-block {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 17px;
+}
+
+.search-block__input {
+    border: inherit;
+    border-radius: 3px;
+    background: #F5F5F5;
+    width: 964px;
+    height: 38px;
+    background-image: url(/image/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 11px 15px;
+    margin-right: 5px;
+}
+
+.search-block__input::placeholder {
+    padding-left: 35px;
+}
+
+.search-block__btn {
+    width: 96px;
+    height: 38px;
+    background: #FFAF1E;
+    font-weight: bold;
+    border-radius: 3px;
+}
