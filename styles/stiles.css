@@ -1,3 +1,7 @@
+body {
+    background-color: #FBFBFB;
+}
+
 .wrapper {
     max-width: 1110px;
     margin: auto;
@@ -16,6 +20,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 16px;
+    background-color: #FBFBFB;
 }
 
 .header__link {
@@ -93,13 +98,14 @@ button {
 }
 
 .search-block {
-height: 110px;
-background: #FFFFFF;
-border: 1px solid #E4E4E4;
-box-sizing: border-box;
-box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.05);
-border-radius: 3px;
-padding: 17px 16px;
+    height: 110px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.05);
+    border-radius: 3px;
+    padding: 17px 16px;
+    margin-bottom: 55px;
 }
 
 .search-block__search-filter-block {
@@ -109,10 +115,11 @@ padding: 17px 16px;
 }
 
 .search-block__input {
+    padding-left: 30px;
     border: inherit;
     border-radius: 3px;
     background: #F5F5F5;
-    width: 964px;
+    width: 934px;
     height: 38px;
     background-image: url(/image/search-icon.png);
     background-repeat: no-repeat;
@@ -129,5 +136,185 @@ padding: 17px 16px;
     height: 38px;
     background: #FFAF1E;
     font-weight: bold;
+    border-radius: 3px;
+}
+
+.content__products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.content__prduct-item {
+    height: 190px;
+    width: calc( 100% / 3 - 20px);
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.05);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-weight: bold;
+
+}
+
+.firstItem {
+    width: calc( 100% / 2 - 15px);
+}
+
+.content__manufacturers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__manufacturers__title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.content__manufacturers__manufacturers-container {
+    width: 100%;
+    display: flex;
+    gap: 17px;
+    margin-bottom: 25px;
+}
+
+.content__manufacturers__manufacturer-item {
+    width: calc(100% / 5);
+    box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.05);
+    border-radius: 3px;
+    background: #FFFFFF;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__manufacturers__text {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.content__manufacturers__btn {
+    width: 181px;
+    height: 38px;
+    margin: auto;
+    background: #FFAF1E;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.content__office-addresses-block {
+
+}
+
+.content__office-addresses__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.content__office-addresses__adres-icon {
+    margin-right: 9px;
+}
+
+.content__office-addresses__container {
+    padding: 30px 12px 25px 16px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.05);
+    border-radius: 3px;
+}
+/*  */
+.content__office-addresses__adreses-block {
+    display: flex;
+    margin-bottom: 20px;
+  
+}
+
+.content__office-addresses__adres {
+    display: flex;
+    color: #828282; 
+}
+
+.content__office-adres__container {
+    display: grid;
+    grid-template-columns: 492px 201px 358px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "map photo list"
+                         "map photo btn";
+    column-gap: 12px;
+}
+
+.content__office-addresses__adres-text {
+    margin-right: 26px;
+}
+
+.content__office-adres__map-block {
+    grid-area: map;
+}
+
+.content__office-adres__office-photo-container {
+    grid-area: photo;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.content__office-adres__list {
+    color: #FFAF1E;
+    margin: 0;
+    padding: 0;
+}
+
+.content__office-adres__list-container {
+    grid-area: list;
+    margin-left: 27px;
+}
+
+
+.content__office-adres__list-item {
+    margin-bottom: 22px;
+}
+
+.content__office-adres__list-item:last-child {
+    margin-bottom: 6;
+}
+
+.content__office-adres__list-item span {
+    color: black;
+}
+
+.content__office-adres__btn-and-text-container {
+    grid-area: btn;
+    margin-left: 11px;
+}
+
+.content__office-adres__text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content__office-adres__button {
+    width: 181px;
+    height: 38px;
+    background: #FFAF1E;
     border-radius: 3px;
 }
