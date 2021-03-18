@@ -119,7 +119,8 @@ button {
     border: inherit;
     border-radius: 3px;
     background: #F5F5F5;
-    width: 934px;
+    /* width: 934px; */
+    width: calc(100% - 96px - 43px);
     height: 38px;
     background-image: url(/image/search-icon.png);
     background-repeat: no-repeat;
@@ -254,7 +255,7 @@ button {
 
 .content__office-adres__container {
     display: grid;
-    grid-template-columns: 492px 201px 358px;
+    grid-template-columns: 492px 201px auto;
     grid-template-rows: auto auto;
     grid-template-areas: "map photo list"
                          "map photo btn";
@@ -317,4 +318,176 @@ button {
     height: 38px;
     background: #FFAF1E;
     border-radius: 3px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 780px) {
+    .header__authorization-block {
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 0;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .menu__item__block {
+        padding: 20px 20px;
+    }
+    
+    .content__prduct-item {
+        width: calc(100% / 2 - 16px);
+    }
+
+    .content__prduct-item:last-child {
+        margin: auto;
+    }
+
+    .content__manufacturers__manufacturers-container {
+        flex-wrap: wrap;
+    }
+
+    .content__manufacturers__manufacturer-item {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .content__manufacturers__manufacturer-item {
+        margin: auto;
+    }
+    
+    .menu__item { 
+        width: calc(100% / 4);
+        padding: 10px 0px;
+
+    }
+
+    .menu__item:nth-child(5n), .menu__item:nth-child(6n), .menu__item:last-child {
+        width: calc(100% / 3);
+        text-align: center;
+        
+    }
+
+    .content__office-addresses__adreses-block {
+        justify-content: space-around;
+    }
+
+    .content__office-adres__container {
+        display: grid;
+        grid-template-columns: 480px;
+        grid-template-rows: auto;
+        grid-template-areas: "map"
+                             "photo"
+                             "list"
+                             "btn";
+        justify-content: center;
+    }
+
+    .content__office-adres__map-block img {
+        width: 480px;
+    }
+
+    .content__office-adres__office-photo-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content__office-adres__btn-and-text-container {
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content__office-adres__text {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 780px) and (max-width: 930px) {
+    .menu {
+        flex-wrap: wrap;
+        gap: 0;
+        height: auto;
+    }
+    
+    .menu__item { 
+        width: calc(100% / 5);
+        padding: 10px 0px;
+
+    }
+
+    .menu__item:nth-child(6n), .menu__item:last-child {
+        width: calc(100% / 2 - 4px);
+        text-align: center;
+        border: 2px solid #FBFBFB;
+        
+    }
+
+    .content__office-adres__container {
+        display: grid;
+        grid-template-columns: 400px  250px auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "map   list  list"
+                             "map   list  list"
+                             "photo photo photo"
+                             "btn btn btn";
+    }
+
+    .content__office-adres__map-block img {
+        width: 400PX;
+    }
+
+    .content__office-adres__office-photo-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content__office-adres__btn-and-text-container {
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content__office-adres__text {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width:930px) and (max-width: 1100px) {
+    .menu__item__block {
+        padding: 16px 25px;
+    }
+
+    .content__office-adres__container {
+        display: grid;
+        grid-template-columns: 492px 201px auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "map photo list"
+                             "map photo list"
+                             "btn btn   btn"; 
+        column-gap: 3px;
+    }
+
+    .content__office-adres__btn-and-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content__office-adres__map-block {
+        margin-bottom: 20px;
+    }
 }
